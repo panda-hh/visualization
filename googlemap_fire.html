@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_ecb77a97101f4b30a331a31eb1bca357 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_ecb77a97101f4b30a331a31eb1bca357" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_ecb77a97101f4b30a331a31eb1bca357 = L.map(
+        'map_ecb77a97101f4b30a331a31eb1bca357', {
+        center: [37.5662952, 126.9779451],
+        zoom: 11,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_9e7eaf4f6d184438ba0b1215190d7ca4 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+    
+        var marker_70364b1b7dd94a7db38ba3401c05c213 = L.marker(
+            [37.5728118, 126.9788859],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_e7d73222316d4d5f860e558615d16d63 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7262d5e6db7f4f5196d5794d0c5b4722 = $('<div id="html_7262d5e6db7f4f5196d5794d0c5b4722" style="width: 100.0%; height: 100.0%;">종로구</div>')[0];
+                popup_e7d73222316d4d5f860e558615d16d63.setContent(html_7262d5e6db7f4f5196d5794d0c5b4722);
+            
+
+            marker_70364b1b7dd94a7db38ba3401c05c213.bindPopup(popup_e7d73222316d4d5f860e558615d16d63)
+            ;
+
+            
+        
+    
+        var marker_acd441588bf74590ab04cd20d26207fc = L.marker(
+            [37.5528704, 127.0096057],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_131e5b21bff14dc1917dd412ffbf31d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0196f021fd73454d87703a454be7690e = $('<div id="html_0196f021fd73454d87703a454be7690e" style="width: 100.0%; height: 100.0%;">중구</div>')[0];
+                popup_131e5b21bff14dc1917dd412ffbf31d4.setContent(html_0196f021fd73454d87703a454be7690e);
+            
+
+            marker_acd441588bf74590ab04cd20d26207fc.bindPopup(popup_131e5b21bff14dc1917dd412ffbf31d4)
+            ;
+
+            
+        
+    
+        var marker_00060b6acd7e4dc6925106dd74a22b1d = L.marker(
+            [37.5340664, 126.9714989],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_512ea7068e13433d9d4849777c73c15e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_775fc921e0f848efa9cba3d09235f3ac = $('<div id="html_775fc921e0f848efa9cba3d09235f3ac" style="width: 100.0%; height: 100.0%;">용산구</div>')[0];
+                popup_512ea7068e13433d9d4849777c73c15e.setContent(html_775fc921e0f848efa9cba3d09235f3ac);
+            
+
+            marker_00060b6acd7e4dc6925106dd74a22b1d.bindPopup(popup_512ea7068e13433d9d4849777c73c15e)
+            ;
+
+            
+        
+    
+        var marker_5a244d742f43477a81bce508d0834145 = L.marker(
+            [37.5538549, 127.0395466],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_573aa97c7e5b45998e4102e237d52625 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2425c974f6f743318a1ec09a96eaf19c = $('<div id="html_2425c974f6f743318a1ec09a96eaf19c" style="width: 100.0%; height: 100.0%;">성동구</div>')[0];
+                popup_573aa97c7e5b45998e4102e237d52625.setContent(html_2425c974f6f743318a1ec09a96eaf19c);
+            
+
+            marker_5a244d742f43477a81bce508d0834145.bindPopup(popup_573aa97c7e5b45998e4102e237d52625)
+            ;
+
+            
+        
+    
+        var marker_ff603a625f7c46de984f152855e80141 = L.marker(
+            [37.5448236, 127.0828901],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_30e46c7c74bd4c70bbe8784e1fa20964 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c1320196d9bb4fa39fa7d17a8ec2fd95 = $('<div id="html_c1320196d9bb4fa39fa7d17a8ec2fd95" style="width: 100.0%; height: 100.0%;">광진구</div>')[0];
+                popup_30e46c7c74bd4c70bbe8784e1fa20964.setContent(html_c1320196d9bb4fa39fa7d17a8ec2fd95);
+            
+
+            marker_ff603a625f7c46de984f152855e80141.bindPopup(popup_30e46c7c74bd4c70bbe8784e1fa20964)
+            ;
+
+            
+        
+    
+        var marker_217eedb109554a8eb237439a49e6ed44 = L.marker(
+            [37.5639534, 127.0666554],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_703bbde4ebb34d509c3bb5cc765116a1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_140468a690fd475fb7976ba38adf8958 = $('<div id="html_140468a690fd475fb7976ba38adf8958" style="width: 100.0%; height: 100.0%;">동대문구</div>')[0];
+                popup_703bbde4ebb34d509c3bb5cc765116a1.setContent(html_140468a690fd475fb7976ba38adf8958);
+            
+
+            marker_217eedb109554a8eb237439a49e6ed44.bindPopup(popup_703bbde4ebb34d509c3bb5cc765116a1)
+            ;
+
+            
+        
+    
+        var marker_a90f492cb2c04338bee8921a88cde7ac = L.marker(
+            [37.6152907, 127.0949175],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_f5a4c17dd9104c8585111ca2cd7f44c7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_94295d30e66e412ba79fd7a58c9ecad3 = $('<div id="html_94295d30e66e412ba79fd7a58c9ecad3" style="width: 100.0%; height: 100.0%;">중랑구</div>')[0];
+                popup_f5a4c17dd9104c8585111ca2cd7f44c7.setContent(html_94295d30e66e412ba79fd7a58c9ecad3);
+            
+
+            marker_a90f492cb2c04338bee8921a88cde7ac.bindPopup(popup_f5a4c17dd9104c8585111ca2cd7f44c7)
+            ;
+
+            
+        
+    
+        var marker_ef1fa531eec047c59cd70e9fdf455020 = L.marker(
+            [37.6024407, 127.0317753],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_953ea9f8dd8b4022af2a3e8321742cd0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfb3f0be1045499e80f10f730fd052bc = $('<div id="html_dfb3f0be1045499e80f10f730fd052bc" style="width: 100.0%; height: 100.0%;">성북구</div>')[0];
+                popup_953ea9f8dd8b4022af2a3e8321742cd0.setContent(html_dfb3f0be1045499e80f10f730fd052bc);
+            
+
+            marker_ef1fa531eec047c59cd70e9fdf455020.bindPopup(popup_953ea9f8dd8b4022af2a3e8321742cd0)
+            ;
+
+            
+        
+    
+        var marker_42ce4844b8094fc48cf57838b2b79881 = L.marker(
+            [37.6329905, 127.0381844],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_ca892a6e48ad483580b1673ac3d6917b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cd6e331fb0924d62a26386e5b5f40b86 = $('<div id="html_cd6e331fb0924d62a26386e5b5f40b86" style="width: 100.0%; height: 100.0%;">강북구</div>')[0];
+                popup_ca892a6e48ad483580b1673ac3d6917b.setContent(html_cd6e331fb0924d62a26386e5b5f40b86);
+            
+
+            marker_42ce4844b8094fc48cf57838b2b79881.bindPopup(popup_ca892a6e48ad483580b1673ac3d6917b)
+            ;
+
+            
+        
+    
+        var marker_d1abafb12c584a2ea145996dcb8c1f7c = L.marker(
+            [37.6639685, 127.043016],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_e02a204261f64240853da0eebdd9ec1a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a23e87f2c19b4d8dbf09795bcda71d78 = $('<div id="html_a23e87f2c19b4d8dbf09795bcda71d78" style="width: 100.0%; height: 100.0%;">도봉구</div>')[0];
+                popup_e02a204261f64240853da0eebdd9ec1a.setContent(html_a23e87f2c19b4d8dbf09795bcda71d78);
+            
+
+            marker_d1abafb12c584a2ea145996dcb8c1f7c.bindPopup(popup_e02a204261f64240853da0eebdd9ec1a)
+            ;
+
+            
+        
+    
+        var marker_32e41d82828c4f4997bd4a66f4acc5ab = L.marker(
+            [37.6381111, 127.0710973],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_b3d4db174e8c40619b52f9d8760c2d09 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_116bb1e80b8b4e2c9039085f0d733cb2 = $('<div id="html_116bb1e80b8b4e2c9039085f0d733cb2" style="width: 100.0%; height: 100.0%;">노원구</div>')[0];
+                popup_b3d4db174e8c40619b52f9d8760c2d09.setContent(html_116bb1e80b8b4e2c9039085f0d733cb2);
+            
+
+            marker_32e41d82828c4f4997bd4a66f4acc5ab.bindPopup(popup_b3d4db174e8c40619b52f9d8760c2d09)
+            ;
+
+            
+        
+    
+        var marker_be2ba7044a8e4935b522c2dfcb5de874 = L.marker(
+            [37.6286736, 126.9198207],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_a348a5dcaa7547e383865d9c8b6e43c1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8eb8952257f4d69a90f7aaa3673d285 = $('<div id="html_b8eb8952257f4d69a90f7aaa3673d285" style="width: 100.0%; height: 100.0%;">은평구</div>')[0];
+                popup_a348a5dcaa7547e383865d9c8b6e43c1.setContent(html_b8eb8952257f4d69a90f7aaa3673d285);
+            
+
+            marker_be2ba7044a8e4935b522c2dfcb5de874.bindPopup(popup_a348a5dcaa7547e383865d9c8b6e43c1)
+            ;
+
+            
+        
+    
+        var marker_b1e2cd71d2454f6d81aa62373f179e41 = L.marker(
+            [37.5731999, 126.9359179],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_e27f814d80054a28aa87e55c996d2eed = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c8c7e7849fa4445eb0308c334cb456f7 = $('<div id="html_c8c7e7849fa4445eb0308c334cb456f7" style="width: 100.0%; height: 100.0%;">서대문구</div>')[0];
+                popup_e27f814d80054a28aa87e55c996d2eed.setContent(html_c8c7e7849fa4445eb0308c334cb456f7);
+            
+
+            marker_b1e2cd71d2454f6d81aa62373f179e41.bindPopup(popup_e27f814d80054a28aa87e55c996d2eed)
+            ;
+
+            
+        
+    
+        var marker_0210e5db7faa4706959e248513db2122 = L.marker(
+            [37.5493417, 126.9331966],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_46c150909c384749b15fb0022434c672 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_118cb8fcf2b747998e90d3ffc73d356d = $('<div id="html_118cb8fcf2b747998e90d3ffc73d356d" style="width: 100.0%; height: 100.0%;">마포구</div>')[0];
+                popup_46c150909c384749b15fb0022434c672.setContent(html_118cb8fcf2b747998e90d3ffc73d356d);
+            
+
+            marker_0210e5db7faa4706959e248513db2122.bindPopup(popup_46c150909c384749b15fb0022434c672)
+            ;
+
+            
+        
+    
+        var marker_f81e96a83e854aa5a4bd4577a58689aa = L.marker(
+            [37.5301259, 126.8722767],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_34fa69be762a4b519490149a065cebec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_21c1b1f311584e2b9883f5da701897d8 = $('<div id="html_21c1b1f311584e2b9883f5da701897d8" style="width: 100.0%; height: 100.0%;">양천구</div>')[0];
+                popup_34fa69be762a4b519490149a065cebec.setContent(html_21c1b1f311584e2b9883f5da701897d8);
+            
+
+            marker_f81e96a83e854aa5a4bd4577a58689aa.bindPopup(popup_34fa69be762a4b519490149a065cebec)
+            ;
+
+            
+        
+    
+        var marker_b1fc94d75aab49fcaaf7e1e725780160 = L.marker(
+            [37.5579782, 126.8602313],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_b16ca9cfa3494069883632f9f3ef608c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1ca820d7fc824653a4dae6202cf00a32 = $('<div id="html_1ca820d7fc824653a4dae6202cf00a32" style="width: 100.0%; height: 100.0%;">강서구</div>')[0];
+                popup_b16ca9cfa3494069883632f9f3ef608c.setContent(html_1ca820d7fc824653a4dae6202cf00a32);
+            
+
+            marker_b1fc94d75aab49fcaaf7e1e725780160.bindPopup(popup_b16ca9cfa3494069883632f9f3ef608c)
+            ;
+
+            
+        
+    
+        var marker_fef33d27295440f083a442d706df855d = L.marker(
+            [37.4977634, 126.8651769],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_6959feba5f024419aa87fda1e0004674 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0e780e6651e74a4faffeb2a0a55fcb51 = $('<div id="html_0e780e6651e74a4faffeb2a0a55fcb51" style="width: 100.0%; height: 100.0%;">구로구</div>')[0];
+                popup_6959feba5f024419aa87fda1e0004674.setContent(html_0e780e6651e74a4faffeb2a0a55fcb51);
+            
+
+            marker_fef33d27295440f083a442d706df855d.bindPopup(popup_6959feba5f024419aa87fda1e0004674)
+            ;
+
+            
+        
+    
+        var marker_b8d579bfec5f4cbc86fe1b5b0e972401 = L.marker(
+            [37.467851, 126.8982579],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_793c50c563b04f749b127677389ae5c2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6e64cb489dfb423a97a09ba0ea0565d2 = $('<div id="html_6e64cb489dfb423a97a09ba0ea0565d2" style="width: 100.0%; height: 100.0%;">금천구</div>')[0];
+                popup_793c50c563b04f749b127677389ae5c2.setContent(html_6e64cb489dfb423a97a09ba0ea0565d2);
+            
+
+            marker_b8d579bfec5f4cbc86fe1b5b0e972401.bindPopup(popup_793c50c563b04f749b127677389ae5c2)
+            ;
+
+            
+        
+    
+        var marker_cc64adbd575a47cbbc5ed9ee8a5aefab = L.marker(
+            [37.5184005, 126.9041725],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_5a460ae2943a4905a15455acc2b21669 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b76059694b6f4a719b4a80605d379c69 = $('<div id="html_b76059694b6f4a719b4a80605d379c69" style="width: 100.0%; height: 100.0%;">영등포구</div>')[0];
+                popup_5a460ae2943a4905a15455acc2b21669.setContent(html_b76059694b6f4a719b4a80605d379c69);
+            
+
+            marker_cc64adbd575a47cbbc5ed9ee8a5aefab.bindPopup(popup_5a460ae2943a4905a15455acc2b21669)
+            ;
+
+            
+        
+    
+        var marker_d53c2dfd5f114cd7b95ce153d6bb07d9 = L.marker(
+            [37.4946259, 126.9177552],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_f8c78bb149ae405b98857c5e7ef967dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_53a6bdc0b2544243ac72c9a1ae32cd7b = $('<div id="html_53a6bdc0b2544243ac72c9a1ae32cd7b" style="width: 100.0%; height: 100.0%;">동작구</div>')[0];
+                popup_f8c78bb149ae405b98857c5e7ef967dd.setContent(html_53a6bdc0b2544243ac72c9a1ae32cd7b);
+            
+
+            marker_d53c2dfd5f114cd7b95ce153d6bb07d9.bindPopup(popup_f8c78bb149ae405b98857c5e7ef967dd)
+            ;
+
+            
+        
+    
+        var marker_509b7942b31949c8a64721fc07b42cbf = L.marker(
+            [37.473879, 126.9523635],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_425118665c6a42f0a995715ebf887629 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2987d813defb4c3e91e9c44101ce503f = $('<div id="html_2987d813defb4c3e91e9c44101ce503f" style="width: 100.0%; height: 100.0%;">관악구</div>')[0];
+                popup_425118665c6a42f0a995715ebf887629.setContent(html_2987d813defb4c3e91e9c44101ce503f);
+            
+
+            marker_509b7942b31949c8a64721fc07b42cbf.bindPopup(popup_425118665c6a42f0a995715ebf887629)
+            ;
+
+            
+        
+    
+        var marker_a1a443d2a8f34d06b38108c1d307be86 = L.marker(
+            [37.4984323, 126.9919145],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_b5917ff5eaf94496a5d45a6ce8f27bdf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c7b3a020ef9046d3ba1ffcedb39c02ef = $('<div id="html_c7b3a020ef9046d3ba1ffcedb39c02ef" style="width: 100.0%; height: 100.0%;">서초구</div>')[0];
+                popup_b5917ff5eaf94496a5d45a6ce8f27bdf.setContent(html_c7b3a020ef9046d3ba1ffcedb39c02ef);
+            
+
+            marker_a1a443d2a8f34d06b38108c1d307be86.bindPopup(popup_b5917ff5eaf94496a5d45a6ce8f27bdf)
+            ;
+
+            
+        
+    
+        var marker_b03f6c3c0c8e4863a52a09d0b6764338 = L.marker(
+            [37.51036, 127.0668895],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_e2e630f24699408d93f533331e6e1540 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3a6f1ccf1ede4e3fa291c65e2587dc7b = $('<div id="html_3a6f1ccf1ede4e3fa291c65e2587dc7b" style="width: 100.0%; height: 100.0%;">강남구</div>')[0];
+                popup_e2e630f24699408d93f533331e6e1540.setContent(html_3a6f1ccf1ede4e3fa291c65e2587dc7b);
+            
+
+            marker_b03f6c3c0c8e4863a52a09d0b6764338.bindPopup(popup_e2e630f24699408d93f533331e6e1540)
+            ;
+
+            
+        
+    
+        var marker_03f8a3fb861f42a79e617946d4fd6820 = L.marker(
+            [37.4997681, 127.1425943],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_12161541b3b64080918c6aaa12df7339 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_533cd4a00bc14fcdb1337b00ab2d9f18 = $('<div id="html_533cd4a00bc14fcdb1337b00ab2d9f18" style="width: 100.0%; height: 100.0%;">송파구</div>')[0];
+                popup_12161541b3b64080918c6aaa12df7339.setContent(html_533cd4a00bc14fcdb1337b00ab2d9f18);
+            
+
+            marker_03f8a3fb861f42a79e617946d4fd6820.bindPopup(popup_12161541b3b64080918c6aaa12df7339)
+            ;
+
+            
+        
+    
+        var marker_aed2d7a5f031443d936f05d71cb8c046 = L.marker(
+            [37.5292364, 127.1249563],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        
+    
+            var popup_fed04406cecb4855b4789350203c7a3c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6b68b0f0ccf4c179a89eab15c813b51 = $('<div id="html_e6b68b0f0ccf4c179a89eab15c813b51" style="width: 100.0%; height: 100.0%;">강동구</div>')[0];
+                popup_fed04406cecb4855b4789350203c7a3c.setContent(html_e6b68b0f0ccf4c179a89eab15c813b51);
+            
+
+            marker_aed2d7a5f031443d936f05d71cb8c046.bindPopup(popup_fed04406cecb4855b4789350203c7a3c)
+            ;
+
+            
+        
+    
+            var circle_marker_732665af9b424cdf84bfd3ecf16c2426 = L.circleMarker(
+                [37.5728118, 126.9788859],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_752e4e0919a54d50ba02aab644666b9c = L.circleMarker(
+                [37.5528704, 127.0096057],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_92313c15487e47f9bc8d85cdc567fb1a = L.circleMarker(
+                [37.5340664, 126.9714989],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16.7,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_f5b2bc7d6c6d49b1b8ffa794023df41e = L.circleMarker(
+                [37.5538549, 127.0395466],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.7,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_76bb8a51d67b4b6aa5ca820c54daa2f8 = L.circleMarker(
+                [37.5448236, 127.0828901],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_4c3a502603a242caa7fb45b39e0c6b71 = L.circleMarker(
+                [37.5639534, 127.0666554],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 20.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_e3c547cc92df46e6868c40050cbc49a2 = L.circleMarker(
+                [37.6152907, 127.0949175],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_6fc9659625a44013ab52ff7723c3438f = L.circleMarker(
+                [37.6024407, 127.0317753],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 18.3,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_8a8196e5437a486491a507f08073485e = L.circleMarker(
+                [37.6329905, 127.0381844],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 18.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_2f48e976d5ca4f3c9420691e4b56deff = L.circleMarker(
+                [37.6639685, 127.043016],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 19.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_a9b37a406371498f92d5e735b93dd113 = L.circleMarker(
+                [37.6381111, 127.0710973],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 27.9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_5c247403113046398f828828ba77c663 = L.circleMarker(
+                [37.6286736, 126.9198207],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 15.9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_2e33e0368a4d4f0fbc72ef1e7dd5c4c0 = L.circleMarker(
+                [37.5731999, 126.9359179],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_49d0ee378823446db33aa796694bcea3 = L.circleMarker(
+                [37.5493417, 126.9331966],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.5,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_f65d100d2c354f88bb6fdc7224f576b1 = L.circleMarker(
+                [37.5301259, 126.8722767],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_63d1c3d6f3b94f0c9088e63e9b8a7565 = L.circleMarker(
+                [37.5579782, 126.8602313],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 36.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_0112ed344d614886ab34a0b277320681 = L.circleMarker(
+                [37.4977634, 126.8651769],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 26.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_efeef0c5465748c994bf2c774677d3e5 = L.circleMarker(
+                [37.467851, 126.8982579],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 17.4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_8227db415bdd4d7caef0ad614865d7f7 = L.circleMarker(
+                [37.5184005, 126.9041725],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 23.9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_610c5843a71c4d8891315844fb97c4b1 = L.circleMarker(
+                [37.4946259, 126.9177552],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 22.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_437c3172f8704c558e0d8d03c4e0cb9f = L.circleMarker(
+                [37.473879, 126.9523635],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 28.6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_eca93f2075d6454488a5316b1c2b89a9 = L.circleMarker(
+                [37.4984323, 126.9919145],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_68e1afef51e94c5e8fd06ccd6b9caf24 = L.circleMarker(
+                [37.51036, 127.0668895],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 50.2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_dd556b90524d4a458a7512311e9cdb24 = L.circleMarker(
+                [37.4997681, 127.1425943],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 31.8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+            var circle_marker_7b456d4020c04da880ce6e7e2729ca01 = L.circleMarker(
+                [37.5292364, 127.1249563],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 26.9,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+            
+    
+        
+        var geo_json_fe2424b00957415bbd8e96b00d34f08a = L.geoJson(
+            {"features": [{"geometry": {"coordinates": [[[127.11519584981606, 37.557533180704915], [127.16683184366129, 37.57672487388627], [127.18408792330152, 37.55814280369575], [127.16530984307447, 37.54221851258693], [127.14672806823502, 37.51415680680291], [127.12123165719615, 37.52528270089], [127.1116764203608, 37.540669955324965], [127.11519584981606, 37.557533180704915]]], "type": "Polygon"}, "id": "\uac15\ub3d9\uad6c", "properties": {"base_year": "2013", "code": "11250", "highlight": {}, "name": "\uac15\ub3d9\uad6c", "name_eng": "Gangdong-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.0690698130372, 37.522279423505026], [127.10087519791962, 37.524841220167055], [127.1116764203608, 37.540669955324965], [127.12123165719615, 37.52528270089], [127.14672806823502, 37.51415680680291], [127.1634944215765, 37.497445406097484], [127.14206058413274, 37.47089819098501], [127.12440571080893, 37.46240445587048], [127.11117085201238, 37.485708381512445], [127.0719146000724, 37.50224013587669], [127.0690698130372, 37.522279423505026]]], "type": "Polygon"}, "id": "\uc1a1\ud30c\uad6c", "properties": {"base_year": "2013", "code": "11240", "highlight": {}, "name": "\uc1a1\ud30c\uad6c", "name_eng": "Songpa-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.05867359288398, 37.52629974922568], [127.0690698130372, 37.522279423505026], [127.0719146000724, 37.50224013587669], [127.11117085201238, 37.485708381512445], [127.12440571080893, 37.46240445587048], [127.09842759318751, 37.45862253857461], [127.08640440578156, 37.472697935184655], [127.0559170481904, 37.4659228914077], [127.03621915098798, 37.48175802427603], [127.01397119667513, 37.52503988289669], [127.02302831890559, 37.53231899582663], [127.05867359288398, 37.52629974922568]]], "type": "Polygon"}, "id": "\uac15\ub0a8\uad6c", "properties": {"base_year": "2013", "code": "11230", "highlight": {}, "name": "\uac15\ub0a8\uad6c", "name_eng": "Gangnam-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.01397119667513, 37.52503988289669], [127.03621915098798, 37.48175802427603], [127.0559170481904, 37.4659228914077], [127.08640440578156, 37.472697935184655], [127.09842759318751, 37.45862253857461], [127.09046928565951, 37.44296826114185], [127.06778107605433, 37.426197424057314], [127.04957232987142, 37.42805836845694], [127.03881782597922, 37.45382039851715], [126.99072073195462, 37.455326143310025], [126.98367668291802, 37.473856492692086], [126.98223807916081, 37.509314966770326], [127.01397119667513, 37.52503988289669]]], "type": "Polygon"}, "id": "\uc11c\ucd08\uad6c", "properties": {"base_year": "2013", "code": "11220", "highlight": {}, "name": "\uc11c\ucd08\uad6c", "name_eng": "Seocho-gu", "style": {"color": "black", "fillColor": "#ffffb2", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.98367668291802, 37.473856492692086], [126.99072073195462, 37.455326143310025], [126.96520439085143, 37.438249784006246], [126.95000001010182, 37.43613451165719], [126.93084408056525, 37.447382928333994], [126.9167728146601, 37.45490566423789], [126.90156094129895, 37.47753842789901], [126.90531975801812, 37.48218087575429], [126.94922661389508, 37.49125437495649], [126.9725891850662, 37.472561363278125], [126.98367668291802, 37.473856492692086]]], "type": "Polygon"}, "id": "\uad00\uc545\uad6c", "properties": {"base_year": "2013", "code": "11210", "highlight": {}, "name": "\uad00\uc545\uad6c", "name_eng": "Gwanak-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.98223807916081, 37.509314966770326], [126.98367668291802, 37.473856492692086], [126.9725891850662, 37.472561363278125], [126.94922661389508, 37.49125437495649], [126.90531975801812, 37.48218087575429], [126.92177893174825, 37.494889877415176], [126.92810628828279, 37.51329595732015], [126.95249990298159, 37.51722500741813], [126.98223807916081, 37.509314966770326]]], "type": "Polygon"}, "id": "\ub3d9\uc791\uad6c", "properties": {"base_year": "2013", "code": "11200", "highlight": {}, "name": "\ub3d9\uc791\uad6c", "name_eng": "Dongjak-gu", "style": {"color": "black", "fillColor": "#e31a1c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.89184663862764, 37.547373974997114], [126.94566733083212, 37.526617542453366], [126.95249990298159, 37.51722500741813], [126.92810628828279, 37.51329595732015], [126.92177893174825, 37.494889877415176], [126.90531975801812, 37.48218087575429], [126.89594776782485, 37.504675281309176], [126.88156402353862, 37.513970034765684], [126.88825757860099, 37.54079733630232], [126.89184663862764, 37.547373974997114]]], "type": "Polygon"}, "id": "\uc601\ub4f1\ud3ec\uad6c", "properties": {"base_year": "2013", "code": "11190", "highlight": {}, "name": "\uc601\ub4f1\ud3ec\uad6c", "name_eng": "Yeongdeungpo-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.90156094129895, 37.47753842789901], [126.9167728146601, 37.45490566423789], [126.93084408056525, 37.447382928333994], [126.9025831711697, 37.434549366349124], [126.87683271502428, 37.482576591607305], [126.90156094129895, 37.47753842789901]]], "type": "Polygon"}, "id": "\uae08\ucc9c\uad6c", "properties": {"base_year": "2013", "code": "11180", "highlight": {}, "name": "\uae08\ucc9c\uad6c", "name_eng": "Geumcheon-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.82688081517314, 37.50548972232896], [126.88156402353862, 37.513970034765684], [126.89594776782485, 37.504675281309176], [126.90531975801812, 37.48218087575429], [126.90156094129895, 37.47753842789901], [126.87683271502428, 37.482576591607305], [126.84762676054953, 37.47146723936323], [126.83549485076196, 37.474098236975095], [126.82264796791348, 37.4878476492147], [126.82504736331406, 37.50302612640443], [126.82688081517314, 37.50548972232896]]], "type": "Polygon"}, "id": "\uad6c\ub85c\uad6c", "properties": {"base_year": "2013", "code": "11170", "highlight": {}, "name": "\uad6c\ub85c\uad6c", "name_eng": "Guro-gu", "style": {"color": "black", "fillColor": "#fc4e2a", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.79575768552907, 37.57881087633202], [126.80702115023597, 37.60123001013228], [126.82251438477105, 37.5880430810082], [126.85984199399667, 37.571847855292745], [126.89184663862764, 37.547373974997114], [126.88825757860099, 37.54079733630232], [126.86637464321238, 37.54859191094823], [126.86610073476395, 37.52699964144669], [126.84257291943153, 37.52373707805596], [126.8242331426722, 37.53788078753248], [126.77324417717703, 37.5459123450554], [126.76979180579352, 37.55139183008809], [126.79575768552907, 37.57881087633202]]], "type": "Polygon"}, "id": "\uac15\uc11c\uad6c", "properties": {"base_year": "2013", "code": "11160", "highlight": {}, "name": "\uac15\uc11c\uad6c", "name_eng": "Gangseo-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.8242331426722, 37.53788078753248], [126.84257291943153, 37.52373707805596], [126.86610073476395, 37.52699964144669], [126.86637464321238, 37.54859191094823], [126.88825757860099, 37.54079733630232], [126.88156402353862, 37.513970034765684], [126.82688081517314, 37.50548972232896], [126.8242331426722, 37.53788078753248]]], "type": "Polygon"}, "id": "\uc591\ucc9c\uad6c", "properties": {"base_year": "2013", "code": "11150", "highlight": {}, "name": "\uc591\ucc9c\uad6c", "name_eng": "Yangcheon-gu", "style": {"color": "black", "fillColor": "#e31a1c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.90522065831053, 37.57409700522574], [126.93898161798973, 37.552310003728124], [126.96358226710812, 37.55605635475154], [126.96448570553055, 37.548705692021635], [126.94566733083212, 37.526617542453366], [126.89184663862764, 37.547373974997114], [126.85984199399667, 37.571847855292745], [126.88433284773288, 37.588143322880526], [126.90522065831053, 37.57409700522574]]], "type": "Polygon"}, "id": "\ub9c8\ud3ec\uad6c", "properties": {"base_year": "2013", "code": "11140", "highlight": {}, "name": "\ub9c8\ud3ec\uad6c", "name_eng": "Mapo-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.9524752030572, 37.60508692737045], [126.95565425846463, 37.576080790881456], [126.96873633279075, 37.56313604690827], [126.96358226710812, 37.55605635475154], [126.93898161798973, 37.552310003728124], [126.90522065831053, 37.57409700522574], [126.9524752030572, 37.60508692737045]]], "type": "Polygon"}, "id": "\uc11c\ub300\ubb38\uad6c", "properties": {"base_year": "2013", "code": "11130", "highlight": {}, "name": "\uc11c\ub300\ubb38\uad6c", "name_eng": "Seodaemun-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.9738864128702, 37.62949634786888], [126.95427017006129, 37.622033431339425], [126.9524752030572, 37.60508692737045], [126.90522065831053, 37.57409700522574], [126.88433284773288, 37.588143322880526], [126.90396681003595, 37.59227403419942], [126.90303066177668, 37.609977911401344], [126.91455481429648, 37.64150050996935], [126.956473797387, 37.652480737339445], [126.9738864128702, 37.62949634786888]]], "type": "Polygon"}, "id": "\uc740\ud3c9\uad6c", "properties": {"base_year": "2013", "code": "11120", "highlight": {}, "name": "\uc740\ud3c9\uad6c", "name_eng": "Eunpyeong-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.0838752703195, 37.69359534202034], [127.09706391309695, 37.686383719372294], [127.09440766298717, 37.64713490473045], [127.11326795855199, 37.639622905315925], [127.10782277688129, 37.61804244241069], [127.07351243825278, 37.61283660342313], [127.05209373568619, 37.62164065487782], [127.04358800895609, 37.62848931298715], [127.05800075220091, 37.64318263878276], [127.05288479710485, 37.68423857084347], [127.0838752703195, 37.69359534202034]]], "type": "Polygon"}, "id": "\ub178\uc6d0\uad6c", "properties": {"base_year": "2013", "code": "11110", "highlight": {}, "name": "\ub178\uc6d0\uad6c", "name_eng": "Nowon-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.05288479710485, 37.68423857084347], [127.05800075220091, 37.64318263878276], [127.04358800895609, 37.62848931298715], [127.01465935892466, 37.64943687496812], [127.02062116141389, 37.667173575971205], [127.01039666042071, 37.681894589603594], [127.01795099203432, 37.69824412775662], [127.05288479710485, 37.68423857084347]]], "type": "Polygon"}, "id": "\ub3c4\ubd09\uad6c", "properties": {"base_year": "2013", "code": "11100", "highlight": {}, "name": "\ub3c4\ubd09\uad6c", "name_eng": "Dobong-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.99383903424, 37.676681761199085], [127.01039666042071, 37.681894589603594], [127.02062116141389, 37.667173575971205], [127.01465935892466, 37.64943687496812], [127.04358800895609, 37.62848931298715], [127.05209373568619, 37.62164065487782], [127.03892400992301, 37.609715611023816], [127.0128154749523, 37.613652243470256], [126.98672705513869, 37.63377641288196], [126.9817452676551, 37.65209769387776], [126.99383903424, 37.676681761199085]]], "type": "Polygon"}, "id": "\uac15\ubd81\uad6c", "properties": {"base_year": "2013", "code": "11090", "highlight": {}, "name": "\uac15\ubd81\uad6c", "name_eng": "Gangbuk-gu", "style": {"color": "black", "fillColor": "#feb24c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.977175406416, 37.62859715400388], [126.98672705513869, 37.63377641288196], [127.0128154749523, 37.613652243470256], [127.03892400992301, 37.609715611023816], [127.05209373568619, 37.62164065487782], [127.07351243825278, 37.61283660342313], [127.07382707099227, 37.60401928986419], [127.042705222094, 37.59239437593391], [127.02527254528003, 37.57524616245249], [126.99348293358314, 37.588565457216156], [126.98879865992384, 37.6118927319756], [126.977175406416, 37.62859715400388]]], "type": "Polygon"}, "id": "\uc131\ubd81\uad6c", "properties": {"base_year": "2013", "code": "11080", "highlight": {}, "name": "\uc131\ubd81\uad6c", "name_eng": "Seongbuk-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.07351243825278, 37.61283660342313], [127.10782277688129, 37.61804244241069], [127.1201246020114, 37.60178457598188], [127.10304174249214, 37.57076342290955], [127.08068541280403, 37.56906425519017], [127.07382707099227, 37.60401928986419], [127.07351243825278, 37.61283660342313]]], "type": "Polygon"}, "id": "\uc911\ub791\uad6c", "properties": {"base_year": "2013", "code": "11070", "highlight": {}, "name": "\uc911\ub791\uad6c", "name_eng": "Jungnang-gu", "style": {"color": "black", "fillColor": "#fc4e2a", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.02527254528003, 37.57524616245249], [127.042705222094, 37.59239437593391], [127.07382707099227, 37.60401928986419], [127.08068541280403, 37.56906425519017], [127.07421053024362, 37.55724769712085], [127.05005601081567, 37.567577612590846], [127.02547266349976, 37.568943552237734], [127.02527254528003, 37.57524616245249]]], "type": "Polygon"}, "id": "\ub3d9\ub300\ubb38\uad6c", "properties": {"base_year": "2013", "code": "11060", "highlight": {}, "name": "\ub3d9\ub300\ubb38\uad6c", "name_eng": "Dongdaemun-gu", "style": {"color": "black", "fillColor": "#e31a1c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.08068541280403, 37.56906425519017], [127.10304174249214, 37.57076342290955], [127.11519584981606, 37.557533180704915], [127.1116764203608, 37.540669955324965], [127.10087519791962, 37.524841220167055], [127.0690698130372, 37.522279423505026], [127.05867359288398, 37.52629974922568], [127.07421053024362, 37.55724769712085], [127.08068541280403, 37.56906425519017]]], "type": "Polygon"}, "id": "\uad11\uc9c4\uad6c", "properties": {"base_year": "2013", "code": "11050", "highlight": {}, "name": "\uad11\uc9c4\uad6c", "name_eng": "Gwangjin-gu", "style": {"color": "black", "fillColor": "#fc4e2a", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.02547266349976, 37.568943552237734], [127.05005601081567, 37.567577612590846], [127.07421053024362, 37.55724769712085], [127.05867359288398, 37.52629974922568], [127.02302831890559, 37.53231899582663], [127.01070894177482, 37.54118048964762], [127.02547266349976, 37.568943552237734]]], "type": "Polygon"}, "id": "\uc131\ub3d9\uad6c", "properties": {"base_year": "2013", "code": "11040", "highlight": {}, "name": "\uc131\ub3d9\uad6c", "name_eng": "Seongdong-gu", "style": {"color": "black", "fillColor": "#fd8d3c", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.01070894177482, 37.54118048964762], [127.02302831890559, 37.53231899582663], [127.01397119667513, 37.52503988289669], [126.98223807916081, 37.509314966770326], [126.95249990298159, 37.51722500741813], [126.94566733083212, 37.526617542453366], [126.96448570553055, 37.548705692021635], [126.98752996903328, 37.55094818807139], [127.01070894177482, 37.54118048964762]]], "type": "Polygon"}, "id": "\uc6a9\uc0b0\uad6c", "properties": {"base_year": "2013", "code": "11030", "highlight": {}, "name": "\uc6a9\uc0b0\uad6c", "name_eng": "Yongsan-gu", "style": {"color": "black", "fillColor": "#fed976", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[127.02547266349976, 37.568943552237734], [127.01070894177482, 37.54118048964762], [126.98752996903328, 37.55094818807139], [126.96448570553055, 37.548705692021635], [126.96358226710812, 37.55605635475154], [126.96873633279075, 37.56313604690827], [127.02547266349976, 37.568943552237734]]], "type": "Polygon"}, "id": "\uc911\uad6c", "properties": {"base_year": "2013", "code": "11020", "highlight": {}, "name": "\uc911\uad6c", "name_eng": "Jung-gu", "style": {"color": "black", "fillColor": "#fed976", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}, {"geometry": {"coordinates": [[[126.9738864128702, 37.62949634786888], [126.977175406416, 37.62859715400388], [126.98879865992384, 37.6118927319756], [126.99348293358314, 37.588565457216156], [127.02527254528003, 37.57524616245249], [127.02547266349976, 37.568943552237734], [126.96873633279075, 37.56313604690827], [126.95565425846463, 37.576080790881456], [126.9524752030572, 37.60508692737045], [126.95427017006129, 37.622033431339425], [126.9738864128702, 37.62949634786888]]], "type": "Polygon"}, "id": "\uc885\ub85c\uad6c", "properties": {"base_year": "2013", "code": "11010", "highlight": {}, "name": "\uc885\ub85c\uad6c", "name_eng": "Jongno-gu", "style": {"color": "black", "fillColor": "#ffffb2", "fillOpacity": 0.6, "opacity": 1, "weight": 1}}, "type": "Feature"}], "type": "FeatureCollection"}
+            
+            ).addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+        geo_json_fe2424b00957415bbd8e96b00d34f08a.setStyle(function(feature) {return feature.properties.style;});
+        
+    
+    var color_map_d9e37df623534999b1e4604eea786c26 = {};
+
+    
+    color_map_d9e37df623534999b1e4604eea786c26.color = d3.scale.threshold()
+              .domain([6664.8, 6706.540280561122, 6748.280561122245, 6790.020841683367, 6831.761122244489, 6873.501402805611, 6915.241683366734, 6956.981963927856, 6998.7222444889785, 7040.4625250501, 7082.202805611223, 7123.943086172345, 7165.683366733467, 7207.4236472945895, 7249.163927855711, 7290.904208416834, 7332.644488977956, 7374.384769539079, 7416.1250501002005, 7457.865330661323, 7499.605611222445, 7541.345891783567, 7583.08617234469, 7624.8264529058115, 7666.566733466934, 7708.307014028056, 7750.047294589179, 7791.787575150301, 7833.527855711423, 7875.268136272545, 7917.008416833667, 7958.74869739479, 8000.488977955913, 8042.229258517034, 8083.969539078156, 8125.709819639279, 8167.450100200401, 8209.190380761524, 8250.930661322645, 8292.670941883767, 8334.41122244489, 8376.151503006013, 8417.891783567135, 8459.632064128256, 8501.372344689378, 8543.112625250502, 8584.852905811624, 8626.593186372746, 8668.333466933867, 8710.073747494991, 8751.814028056113, 8793.554308617235, 8835.294589178357, 8877.03486973948, 8918.775150300602, 8960.515430861724, 9002.255711422846, 9043.995991983968, 9085.736272545091, 9127.476553106213, 9169.216833667335, 9210.957114228457, 9252.697394789579, 9294.437675350702, 9336.177955911824, 9377.918236472946, 9419.65851703407, 9461.39879759519, 9503.139078156313, 9544.879358717435, 9586.619639278557, 9628.35991983968, 9670.100200400802, 9711.840480961924, 9753.580761523046, 9795.321042084168, 9837.061322645292, 9878.801603206413, 9920.541883767535, 9962.282164328657, 10004.022444889779, 10045.762725450903, 10087.503006012024, 10129.243286573146, 10170.98356713427, 10212.723847695392, 10254.464128256514, 10296.204408817635, 10337.944689378757, 10379.68496993988, 10421.425250501003, 10463.165531062125, 10504.905811623246, 10546.646092184368, 10588.386372745492, 10630.126653306614, 10671.866933867735, 10713.607214428857, 10755.347494989981, 10797.087775551103, 10838.828056112225, 10880.568336673346, 10922.30861723447, 10964.048897795592, 11005.789178356714, 11047.529458917836, 11089.269739478957, 11131.010020040081, 11172.750300601203, 11214.490581162325, 11256.230861723447, 11297.97114228457, 11339.711422845692, 11381.451703406814, 11423.191983967936, 11464.93226452906, 11506.672545090181, 11548.412825651303, 11590.153106212425, 11631.893386773547, 11673.63366733467, 11715.373947895792, 11757.114228456914, 11798.854509018038, 11840.594789579158, 11882.335070140281, 11924.075350701403, 11965.815631262525, 12007.555911823649, 12049.296192384769, 12091.036472945892, 12132.776753507016, 12174.517034068136, 12216.25731462926, 12257.99759519038, 12299.737875751503, 12341.478156312627, 12383.218436873747, 12424.95871743487, 12466.698997995993, 12508.439278557114, 12550.179559118238, 12591.919839679358, 12633.660120240482, 12675.400400801604, 12717.140681362725, 12758.88096192385, 12800.621242484971, 12842.361523046093, 12884.101803607215, 12925.842084168336, 12967.58236472946, 13009.322645290582, 13051.062925851704, 13092.803206412826, 13134.543486973947, 13176.283767535071, 13218.024048096193, 13259.764328657315, 13301.504609218438, 13343.244889779558, 13384.985170340682, 13426.725450901804, 13468.465731462926, 13510.20601202405, 13551.946292585171, 13593.686573146293, 13635.426853707417, 13677.167134268537, 13718.90741482966, 13760.647695390782, 13802.387975951904, 13844.128256513028, 13885.868537074148, 13927.608817635271, 13969.349098196395, 14011.089378757515, 14052.829659318639, 14094.569939879759, 14136.310220440882, 14178.050501002006, 14219.790781563126, 14261.53106212425, 14303.271342685372, 14345.011623246493, 14386.751903807617, 14428.492184368737, 14470.23246492986, 14511.972745490983, 14553.713026052104, 14595.453306613228, 14637.19358717435, 14678.933867735472, 14720.674148296594, 14762.414428857715, 14804.154709418839, 14845.89498997996, 14887.635270541083, 14929.375551102206, 14971.115831663326, 15012.85611222445, 15054.596392785574, 15096.336673346694, 15138.076953907817, 15179.817234468937, 15221.557515030061, 15263.297795591185, 15305.038076152305, 15346.778356713428, 15388.518637274552, 15430.258917835672, 15471.999198396796, 15513.739478957916, 15555.47975951904, 15597.220040080163, 15638.960320641283, 15680.700601202407, 15722.44088176353, 15764.18116232465, 15805.921442885774, 15847.661723446894, 15889.402004008018, 15931.142284569141, 15972.882565130261, 16014.622845691385, 16056.363126252505, 16098.103406813629, 16139.843687374752, 16181.583967935872, 16223.324248496996, 16265.064529058116, 16306.80480961924, 16348.545090180363, 16390.285370741483, 16432.025651302607, 16473.765931863727, 16515.50621242485, 16557.246492985974, 16598.986773547094, 16640.727054108218, 16682.467334669338, 16724.20761523046, 16765.947895791585, 16807.688176352705, 16849.42845691383, 16891.16873747495, 16932.909018036073, 16974.649298597196, 17016.389579158316, 17058.12985971944, 17099.87014028056, 17141.610420841684, 17183.350701402807, 17225.090981963927, 17266.83126252505, 17308.57154308617, 17350.311823647295, 17392.05210420842, 17433.79238476954, 17475.532665330662, 17517.272945891782, 17559.013226452906, 17600.75350701403, 17642.49378757515, 17684.234068136273, 17725.974348697397, 17767.714629258517, 17809.45490981964, 17851.19519038076, 17892.935470941884, 17934.675751503008, 17976.416032064128, 18018.15631262525, 18059.896593186375, 18101.636873747495, 18143.37715430862, 18185.11743486974, 18226.857715430862, 18268.597995991986, 18310.338276553106, 18352.07855711423, 18393.818837675353, 18435.559118236473, 18477.299398797597, 18519.039679358717, 18560.77995991984, 18602.520240480964, 18644.260521042084, 18686.000801603208, 18727.74108216433, 18769.48136272545, 18811.221643286575, 18852.961923847695, 18894.70220440882, 18936.442484969943, 18978.182765531063, 19019.923046092186, 19061.66332665331, 19103.40360721443, 19145.143887775554, 19186.884168336674, 19228.624448897797, 19270.36472945892, 19312.10501002004, 19353.845290581165, 19395.585571142285, 19437.32585170341, 19479.066132264532, 19520.806412825652, 19562.546693386776, 19604.286973947896, 19646.02725450902, 19687.767535070143, 19729.507815631263, 19771.248096192387, 19812.988376753507, 19854.72865731463, 19896.468937875754, 19938.209218436874, 19979.949498997998, 20021.689779559118, 20063.43006012024, 20105.170340681365, 20146.910621242485, 20188.65090180361, 20230.391182364732, 20272.131462925852, 20313.871743486976, 20355.612024048096, 20397.35230460922, 20439.092585170343, 20480.832865731463, 20522.573146292587, 20564.313426853707, 20606.05370741483, 20647.793987975954, 20689.534268537074, 20731.274549098198, 20773.014829659318, 20814.75511022044, 20856.495390781565, 20898.235671342685, 20939.97595190381, 20981.71623246493, 21023.456513026053, 21065.196793587176, 21106.937074148296, 21148.67735470942, 21190.41763527054, 21232.157915831664, 21273.898196392787, 21315.638476953907, 21357.37875751503, 21399.119038076155, 21440.859318637275, 21482.5995991984, 21524.33987975952, 21566.080160320642, 21607.820440881766, 21649.560721442886, 21691.30100200401, 21733.041282565133, 21774.781563126253, 21816.521843687377, 21858.262124248497, 21900.00240480962, 21941.742685370744, 21983.482965931864, 22025.223246492988, 22066.96352705411, 22108.70380761523, 22150.444088176355, 22192.184368737475, 22233.9246492986, 22275.664929859722, 22317.405210420842, 22359.145490981966, 22400.88577154309, 22442.62605210421, 22484.366332665333, 22526.106613226453, 22567.846893787577, 22609.5871743487, 22651.32745490982, 22693.067735470944, 22734.808016032068, 22776.548296593188, 22818.28857715431, 22860.02885771543, 22901.769138276555, 22943.50941883768, 22985.2496993988, 23026.989979959922, 23068.730260521043, 23110.470541082166, 23152.210821643286, 23193.95110220441, 23235.691382765533, 23277.431663326654, 23319.171943887777, 23360.912224448897, 23402.65250501002, 23444.392785571144, 23486.133066132265, 23527.873346693388, 23569.613627254508, 23611.353907815632, 23653.094188376755, 23694.834468937875, 23736.574749499, 23778.31503006012, 23820.055310621243, 23861.795591182366, 23903.53587174349, 23945.27615230461, 23987.01643286573, 24028.756713426854, 24070.496993987977, 24112.2372745491, 24153.97755511022, 24195.71783567134, 24237.458116232465, 24279.19839679359, 24320.938677354712, 24362.678957915832, 24404.419238476952, 24446.159519038076, 24487.8997995992, 24529.640080160323, 24571.380360721447, 24613.120641282563, 24654.860921843687, 24696.60120240481, 24738.341482965934, 24780.081763527058, 24821.822044088174, 24863.562324649298, 24905.30260521042, 24947.042885771545, 24988.78316633267, 25030.523446893785, 25072.26372745491, 25114.004008016032, 25155.744288577156, 25197.48456913828, 25239.2248496994, 25280.96513026052, 25322.705410821643, 25364.445691382767, 25406.18597194389, 25447.92625250501, 25489.66653306613, 25531.406813627254, 25573.147094188378, 25614.8873747495, 25656.62765531062, 25698.36793587174, 25740.108216432865, 25781.84849699399, 25823.588777555113, 25865.329058116233, 25907.069338677356, 25948.809619238476, 25990.5498997996, 26032.290180360724, 26074.030460921844, 26115.770741482967, 26157.511022044087, 26199.25130260521, 26240.991583166335, 26282.731863727455, 26324.47214428858, 26366.2124248497, 26407.952705410822, 26449.692985971946, 26491.433266533066, 26533.17354709419, 26574.913827655313, 26616.654108216433, 26658.394388777557, 26700.134669338677, 26741.8749498998, 26783.615230460924, 26825.355511022044, 26867.095791583168, 26908.836072144288, 26950.57635270541, 26992.316633266535, 27034.056913827655, 27075.79719438878, 27117.5374749499, 27159.277755511022, 27201.018036072146, 27242.75831663327, 27284.49859719439, 27326.23887775551, 27367.979158316633, 27409.719438877757, 27451.45971943888, 27493.2])
+              .range(['#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#fed976', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#feb24c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fd8d3c', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#fc4e2a', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#e31a1c', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026', '#b10026']);
+    
+
+    color_map_d9e37df623534999b1e4604eea786c26.x = d3.scale.linear()
+              .domain([6664.8, 27493.2])
+              .range([0, 400]);
+
+    color_map_d9e37df623534999b1e4604eea786c26.legend = L.control({position: 'topright'});
+    color_map_d9e37df623534999b1e4604eea786c26.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_d9e37df623534999b1e4604eea786c26.legend.addTo(map_ecb77a97101f4b30a331a31eb1bca357);
+
+    color_map_d9e37df623534999b1e4604eea786c26.xAxis = d3.svg.axis()
+        .scale(color_map_d9e37df623534999b1e4604eea786c26.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([6664.8, 10136.2, 13607.6, 17079.0, 20550.4, 24021.8, 27493.2]);
+
+    color_map_d9e37df623534999b1e4604eea786c26.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_d9e37df623534999b1e4604eea786c26.g = color_map_d9e37df623534999b1e4604eea786c26.svg.append("g")
+        .attr("class", "key")
+        .attr("transform", "translate(25,16)");
+
+    color_map_d9e37df623534999b1e4604eea786c26.g.selectAll("rect")
+        .data(color_map_d9e37df623534999b1e4604eea786c26.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_d9e37df623534999b1e4604eea786c26.x(color_map_d9e37df623534999b1e4604eea786c26.color.domain()[i - 1]) : color_map_d9e37df623534999b1e4604eea786c26.x.range()[0],
+            x1: i < color_map_d9e37df623534999b1e4604eea786c26.color.domain().length ? color_map_d9e37df623534999b1e4604eea786c26.x(color_map_d9e37df623534999b1e4604eea786c26.color.domain()[i]) : color_map_d9e37df623534999b1e4604eea786c26.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 10)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_d9e37df623534999b1e4604eea786c26.g.call(color_map_d9e37df623534999b1e4604eea786c26.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .text('');
+</script>
